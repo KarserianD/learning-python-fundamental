@@ -69,3 +69,8 @@ print(second_letter)
 print(sentinel[-1])  # Menggunakan negatif bakal ngambil karakter dari belakang
 
 # Memotong string
+makanan = "nasgor"
+# Start dari nol sampai index ke 3, tetapi tidak memasukkan 3
+print(makanan[0:3])  # nas
+tengah_keakhir = makanan[2:5]  # sgo
+print(tengah_keakhir)
