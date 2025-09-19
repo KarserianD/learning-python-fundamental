@@ -74,3 +74,5 @@ makanan = "nasgor"
 print(makanan[0:3])  # nas
 tengah_keakhir = makanan[2:5]  # sgo
 print(tengah_keakhir)
+tiga_terakhir = makanan[-3:]
+print(tiga_terakhir)
