@@ -74,5 +74,40 @@ makanan = "nasgor"
 print(makanan[0:3])  # nas
 tengah_keakhir = makanan[2:5]  # sgo
 print(tengah_keakhir)
-tiga_terakhir = makanan[-3:]
+tiga_terakhir = makanan[-3:]  # gor
 print(tiga_terakhir)
+# Ngereverse string
+print(makanan[::-1])
+# Ngeskip karakter saat memotong string
+# Memanggil karakter dari index 0 sampai 6 lalu mengambil setelah 2 langkah (ngeskip 1)
+print(makanan[0:6:2])
+
+# String Method
+# capitalize() mengubah karakter pertama string menjadi huruf kapital
+perkenalan = "perkenalkan namaku Muhammad Riyandi"
+print(perkenalan.capitalize())  # p > P
+# count() mengembalikan substring yang muncul pada string
+print(perkenalan.count('a'))  # ada 7 huruf a pada string perkenalan diatas
+# bisa memilih untuk memulai dari index keberapa (start 11, end 33) / masukkan start saja jika ingin memulai dari satu index sampai akhir ('a', 11)
+print(perkenalan.count('a', 11, 33))  # 5
+print(perkenalan.count('na'))  # 2
+# endswith() mengecek apakah string berakhir dengan akhiran yang ditentukan (True False)
+print(perkenalan.endswith("andi"))  # True
+print(perkenalan.endswith("onde"))  # False
+# expandtab() mengganti tab menjadi spasi dengan jumlah sesuai yang di inginkan (untuk string yang menggunakan \t)
+jurusan = "Saya\tmasuk\tke\tjurusan\tPPLG"
+print(jurusan.expandtabs(10))
+# find() mengembalikan index kemunculan karakter pertama yang dicari, jika tidak ditemukan akan mengembalikan -1
+print(jurusan.find('j'))  # 14 (\t dihitung 1)
+print(jurusan.find('PP'))  # 22
+print(jurusan.find('jor'))  # -1
+# rfind() mengembalikan index kemunculan karakter terakhir yang dicari, jika tidak ditemukan akan mengembalikan -1
+print(jurusan.rfind('a'))  # 19
+print(jurusan.rfind('u'))  # 17
+# format() memformat string menjadi lebih bagus
+brand_name = "Lenovo"
+series_name = "LOQ"
+series_detail = "15 IRX 9 RTX 3050"
+turn_into_format = "Saya baru saja membeli laptop dari brand {} seri {} yang {}, el matot jirla".format(
+    brand_name, series_name, series_detail)
+print(turn_into_format)
