@@ -77,7 +77,7 @@ print(tengah_keakhir)
 tiga_terakhir = makanan[-3:]  # gor
 print(tiga_terakhir)
 # Ngereverse string
-print(makanan[::-1])
+print(makanan[::-1])  # rogsan
 # Ngeskip karakter saat memotong string
 # Memanggil karakter dari index 0 sampai 6 lalu mengambil setelah 2 langkah (ngeskip 1)
 print(makanan[0:6:2])
@@ -111,3 +111,11 @@ series_detail = "15 IRX 9 RTX 3050"
 turn_into_format = "Saya baru saja membeli laptop dari brand {} seri {} yang {}, el matot jirla".format(
     brand_name, series_name, series_detail)
 print(turn_into_format)
+# index() mengembalikan index terendah dari substring, argumen tambahan menunjukan index awal dan akhir (default 0 dan panjang string - 1) jika substring tidak ditemukan akan menimbulkan value eror
+challenge = "Belajar fundamental python secara konsisten"
+sub_string = "hon"
+print(challenge.index("u"))  # 9
+# print(challenge.index(sub_string, 24)) #error karena index awal substring ada di 23, jika mulai mencari dari index diatas 23 maka tidak ditemukan dan akan error
+print(challenge.index(sub_string))  # 23 - bisa juga (sub_string, start, end)
+# rindex() mengembalikan index tertinggi dari substring, argumen tambahan menunjukan index awal dan akhir (default 0 dan panjang string - 1) jika substring tidak ditemukan akan menimbulkan value eror
+print(challenge.rindex("kon"))  # 34
