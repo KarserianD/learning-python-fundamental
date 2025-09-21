@@ -119,3 +119,34 @@ print(challenge.index("u"))  # 9
 print(challenge.index(sub_string))  # 23 - bisa juga (sub_string, start, end)
 # rindex() mengembalikan index tertinggi dari substring, argumen tambahan menunjukan index awal dan akhir (default 0 dan panjang string - 1) jika substring tidak ditemukan akan menimbulkan value eror
 print(challenge.rindex("kon"))  # 34
+# isalnum() mengecek alphanumeric karakter
+exmpl_word1 = "ChallengePythonSatuBulan"
+exmpl_word2 = "ChallengePython1Sampai9Bulan"
+exmpl_word3 = "Challenge Python Sebulan"
+print(exmpl_word1.isalnum())  # True
+print(exmpl_word2.isalnum())  # True
+print(exmpl_word3.isalnum())  # False - spasi bukan alphanumeric
+# isalpha() mengecek jika semua karakter string adalah alpabet (a-z) dan (A-Z)
+print(exmpl_word1.isalpha())  # True
+print(exmpl_word2.isalpha())  # False
+print(exmpl_word3.isalpha())  # False - sekali lagi spasi dikecualikan
+# isdecimal() mengecek jika semua karakter string adalah decimal (0-9)
+exmpl_word4 = "3252"
+exmpl_word5 = "5.44"
+print(exmpl_word3.isdecimal())  # False
+print(exmpl_word4.isdecimal())  # True
+print(exmpl_word5.isdecimal())  # False
+# isdigit() mengecek jika semua karakter string adalah number (0-9 dan beberapa karkater unicode untuk number)
+print(exmpl_word4.isdigit())  # True
+print("\u00B2".isdigit())  # True
+print(exmpl_word2.isdigit())  # False
+# isnumeric() mengecek jika semua karakter string adalah number (sama seperti isdigit, bedanya hanya menerima beberapa symbol tambahan seperti ½)
+print(exmpl_word4.isnumeric())  # True
+print("\u00BD".isnumeric())  # True
+# isidentifier() memeriksa pengenal yang valid - ini memeriksa apakah sebuah string adalah nama variable yang valid
+# - variable tidak bisa diawali dengan angka
+print("30DaysPython".isidentifier())  # False
+print("thirty_days_python".isidentifier())  # True
+# islower() mengecek jika semua karakter alpabet berada dalam kondisi lowercase
+print("simply lovely".islower())  # True
+print("simply Lovely".islower())  # False
