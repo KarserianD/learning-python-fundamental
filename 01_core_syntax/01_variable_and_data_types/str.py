@@ -150,3 +150,14 @@ print("thirty_days_python".isidentifier())  # True
 # islower() mengecek jika semua karakter alpabet berada dalam kondisi lowercase
 print("simply lovely".islower())  # True
 print("simply Lovely".islower())  # False
+# isupper() mengecek jika semua karakter alpabet berada dalam kondisi uppercase
+print("I HATE MYSELF".isupper())  # True
+print("i love myself".isupper())  # False
+# join() mengembalikan string yang dirangkai
+programming_language = ["Python", "PHP", "CPP", "JavaScript", "Java"]
+result = " ".join(programming_language)
+result2 = ", ".join(programming_language)
+print(result)  # Python PHP CPP JavaScript Java
+print(result2)  # Python, PHP, CPP, JavaScript, Java
+# strip() menghapus semua karakter yang diberikan dari awal sampai akhir string
+print("thirty days of pythoonnn".strip("noth"))  # irty days of py
