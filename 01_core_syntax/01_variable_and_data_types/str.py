@@ -161,3 +161,17 @@ print(result)  # Python PHP CPP JavaScript Java
 print(result2)  # Python, PHP, CPP, JavaScript, Java
 # strip() menghapus semua karakter yang diberikan dari awal sampai akhir string
 print("thirty days of pythoonnn".strip("noth"))  # irty days of py
+# replace() mengganti substring dengan string yang diberikan
+print("Saya adalah seorang junior python developer".replace(
+    "junior", "senior"))  # Saya adalah seorang senior python developer
+# split() memisahkan string, menggunakan spasi atau string sebagai pemisah
+print("Python PHP Javascript".split())  # ['Python', 'PHP', 'Javascript']
+print("Python, PHP, Javascript".split(", "))  # Memisah dari koma (,)
+# title() mengembalikan string dengan huruf besar di awal
+print("hai, namaku ryan".title())  # Hai, Namaku Ryan
+# swapcase() mengubah uppercase ke lowercase dan begitu juga sebaliknya
+print("ini lowercase".swapcase())  # INI LOWERCASE
+print("INI UPPERCASE".swapcase())  # ini uppercase
+# startswith() mengecek jika string dimulai dengan string/kata yang spesifik
+print("marc marquez".startswith("marc"))  # True
+print("rossi marquez".startswith("marc"))  # False
